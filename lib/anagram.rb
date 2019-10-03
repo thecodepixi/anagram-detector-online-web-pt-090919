@@ -6,8 +6,11 @@ class Anagram
   end 
   
   def match(some_words)
+    matched_words = []
     some_words.each do |new_word|
-      new_word.split("") == @word.split("")
+      if new_word.split("") == @word.split("")
+        matched_words << new_word 
+      end 
     end 
   end 
   
