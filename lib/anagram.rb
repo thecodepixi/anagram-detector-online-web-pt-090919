@@ -3,7 +3,7 @@ class Anagram
   
   def initialize(word)
     @word = word 
-    match
+    match(some_words)
   end 
   
   def match(some_words)
@@ -11,4 +11,5 @@ class Anagram
       new_word.split("") == @word.split("")
     end 
   end 
+  
 end 
