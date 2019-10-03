@@ -3,7 +3,6 @@ class Anagram
   
   def initialize(word)
     @word = word 
-    match(some_words)
   end 
   
   def match(some_words)
